@@ -4,8 +4,10 @@ const ChatBox = () => {
     const [Message, setMessage] = useState('');
 
     useEffect(() => {
-        SocketService.listen('reciveMessage').then((data) => setMessage(data));
+        
+        SocketService.listen('ReceiveMessage').then((data) =>{setMessage(data);} );
         console.log("chat " + Message);
+ 
     }, [Message])
     
     return (

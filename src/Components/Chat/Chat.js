@@ -7,7 +7,7 @@ import SocketService from "../../Services/SocketService";
 const ChatView = () => {
     return (
         <div>
-            <div class="grid-container">
+            <div className="grid-container">
                 <div><ChatBox /></div>  
                 <div><ChatMessage /></div>
             </div>
